@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:viewmodels="clr-namespace:smart_trip.ViewModels" x:DataType="viewmodels:SignUpViewModel"
+             x:Class="smart_trip.Views.SignUpPage">
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <Label Text="Welcome to Smart Travel!"
+                VerticalOptions="Start" 
+                HorizontalOptions="Center" FontSize="Title"/>
+
+            <Label
+                Text="Please register here with your car information for using features of this application."
+                    HorizontalOptions="Center" Margin="0,20" VerticalOptions="Start"/>
+            <Entry Placeholder="Email" Keyboard="Email" Margin="0,20"/>
+            <Entry Placeholder="Password" IsPassword="True" Margin="0,20"/>
+            <Entry Placeholder="Confirm Password" IsPassword="True" Margin="0,20"/>
+            <Picker ItemsSource="{Binding CarManufacturerList}" ItemDisplayBinding="Name" SelectedItem="{Binding Id}" Margin="0,20"/>
+            
+            
+            <Button VerticalOptions="Center" Text="Sign up" Command="{Binding SignUpCommand}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
