@@ -672,3 +672,7 @@ may consider it more useful to permit linking proprietary applications with
 the library.  If this is what you want to do, use the GNU Lesser General
 Public License instead of this License.  But first, please read
 <https://www.gnu.org/licenses/why-not-lgpl.html>.
+
+## Non-Commercial Use Clause
+
+The use of this software for commercial purposes is strictly prohibited. Commercial purposes include the sale, license, or distribution of the software for monetary gain or any other form of compensation. This includes, but is not limited to, integrating the software into a commercial product or service, or using it as part of a commercial offering.
